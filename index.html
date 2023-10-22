@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="music_container">
+        <div class="music_box">
+            <div class="music_header">
+                <img src="images/Excuses.jpg" id="img">
+                <h2 id="music">Excuses</h2>
+                <h3 id="name">AP Dhillon and Gurinder Gill</h3>
+            </div>
+            <div class="music_timer">
+                <h4 id="curr_time" class="curr_time">0:00</h4>
+                <h4 id="duration" class="duration">2:56</h4>
+            </div>
+            <div class="progressbar_container" id="progress_div">
+                <div class="progressbar" id="progressbar"></div>
+            </div>
+            <audio src="audio/Excuses.mp3"></audio>
+            <div class="controler">
+                <img src="images/back.png" id="prev" class="prev">
+                <img src="images/play.png" id="play" class="play">
+                <img src="images/next.png" id="next" class="next">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

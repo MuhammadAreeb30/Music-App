@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Playpen+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playpen Sans', cursive;
+}
+
+.music_container {
+    max-width: 100%;
+    height: 100vh;
+    background-color: #fff5fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.music_box {
+    width: 30rem;
+    height: 40rem;
+    background-color: #ffffff;
+    padding: 3rem;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 7px 7px 18px #dbd3d8,
+        -7px -7px 16px rgb(235, 235, 235);
+}
+
+.music_header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    box-shadow: 7px 7px 16px #d0d0d0,
+        -8px -8px 16px rgb(235, 235, 235);
+}
+
+.anime {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.music_header h2 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.music_header h3 {
+    font-size: 1rem;
+}
+
+.music_timer {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85rem;
+}
+
+.controler {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.progressbar_container {
+    width: 100%;
+    height: 0.20rem;
+    border-radius: 2px;
+    box-shadow: 2px 3px 5px rgba(197, 197, 197, 0.6), -2px -3px 5px rgba(197, 197, 197, 0.3);
+    position: relative;
+    cursor: pointer;
+}
+
+.progressbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0.20rem;
+    transition: width 0.6s linear;
+    border-radius: 2px;
+    background-color: #ff087f;
+    cursor: pointer;
+}
+
+.prev {
+    width: 1.1rem;
+    height: 1.1rem;
+    cursor: pointer;
+}
+
+.play {
+    padding: 1.2rem;
+    border-radius: 50%;
+    background-color: #ff087f;
+    box-shadow: 4px 4px 8px #ff87c1;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.play:hover {
+    box-shadow: none;
+}
+
+.next {
+    width: 1rem;
+    height: 0.90rem;
+    cursor: pointer;
+}
